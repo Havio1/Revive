@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "revive",
+  "version": "${version}",
+  "name": "Revive",
+  "description": "Revive your friends when they died",
+  "authors": [
+    "Globox_Z"
+  ],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/revive",
+    "sources": "https://github.com/Globox1997/Revive",
+    "issues": "https://github.com/Globox1997/Revive/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/revive/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.revive.ReviveMain"
+    ],
+    "client": [
+      "net.revive.ReviveClient"
+    ],
+    "modmenu": [
+      "net.revive.config.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "revive.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric": "*",
+    "minecraft": "1.19.x",
+    "java": ">=17",
+    "cloth-config2": ">=8.0.75"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

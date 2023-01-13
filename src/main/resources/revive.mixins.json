@@ -1,0 +1,24 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.revive.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "PlayerEntityMixin",
+    "ServerPlayerEntityMixin",
+    "ServerPlayNetworkHandlerMixin",
+    "PlayerManagerMixin",
+    "BrewingRecipeRegistryMixin",
+    "PotionItemMixin",
+    "accessor.LivingEntityAccessor"
+  ],
+  "client": [
+    "client.DeathScreenMixin",
+    "client.ClientPlayerEntityMixin",
+    "client.MinecraftClientAccessor",
+    "client.CameraMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
